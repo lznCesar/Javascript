@@ -6,6 +6,7 @@ let calificacion4;
 let calificacion5;
 let promedio;
 
+
 let button = document.getElementById("calcpromediogeneral");
 
 button.addEventListener("click",calcpromedio)
