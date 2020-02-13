@@ -12,7 +12,6 @@ let Resultado;
 se declara variable de button y se le asigna el botn de calcular */
 let button=document.getElementById('btncalcular');
 
-button?.addEventListener('click',suma)
 
 function suma(){
 
