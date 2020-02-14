@@ -1,16 +1,18 @@
-let MetrosTotales, CostoPorMetro, Pago;
+let LongitudAlb, AnchoAlb, AlturaAlb, Pago;
 
 let button = document.getElementById('btnTotales');
-
 button .addEventListener('click', generaPago);
 
 function generaPago(){
 
-    MetrosTotales = Number(document.getElementById('mtsAlberca').value);
-    CostoPorMetro = Number(document.getElementById('costomts').value);
+    LongitudAlb = Number(document.getElementById('Longuitud').value);
+    AnchoAlb = Number(document.getElementById('Ancho').value);
+    AlturaAlb = Number(document.getElementById('Altura').value);
 
-    Pago = MetrosTotales * CostoPorMetro;
+
+    Pago = LongitudAlb * AnchoAlb * AlturaAlb
+
 
     let generarRecibo = document.getElementById('generarRecibo');
-    generarRecibo.innerText = Pago;
+    generarRecibo.innerText = "Costo tota:" + Pago;
 }
