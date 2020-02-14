@@ -16,4 +16,5 @@ function generaArea() {
     area = Math.sqrt((semiperimetro * (semiperimetro - ladoA)) * (semiperimetro - ladoB) * (semiperimetro - ladoC));
 
     let mostarResultado = document.getElementById('mostrarResultado');
-    mostarResultado.innerText = "Semiperimetro:" +    semiperimetro + "Area:" + area}
+    mostarResultado.innerText = "Semiperimetro:" +    semiperimetro + "Area:" + area;
+}
