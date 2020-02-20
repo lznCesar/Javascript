@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+      <div class="container">
+          <div class="jumbotron">
+              <h1 class="text-center mt-1">COSTO DE VIAJE</h1>
+              <div class="row">
+                  <div class="col-4">
+                      <label for="">INGRESE CLASE DE CAMION:</label>
+                      <input type="text" class="form-control" id="bus">
+                  </div>
+                  <div class="col-4">
+                      <label for="">INGRESE NUMERO DE PASAJEROS:</label>
+                      <input type="number" class="form-control" id="Personas">
+                  </div>
+                  <div class="col-4">
+                      <label for="">INGRESE KILOMETROS TOTALES:</label>
+                      <input type="number" class="form-control" id="kilometros">
+                  </div>
+              </div>
+              <div class="row">
+                  <button class="btn btn-outline-info btn-block mt-3 bg-warning" id="btnPre">PRESUPUESTO</button>
+              </div>
+              <div id="printZn"></div>
+          </div>
+      </div>
+ <script src="./../Js/app.js"></script>
+  </body>
+</html>
