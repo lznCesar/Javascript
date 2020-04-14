@@ -42,7 +42,7 @@ function CreateArray (Size){
         array.push(Math.floor(Math.random()*(11 - 1)+ 1))
     }
     console.log(array);
-}
+}.
 
 function validarClick(e){
  
@@ -102,8 +102,8 @@ function validarClick(e){
             for (let i = 0; i <array.length; i++){
                 if (array[i] == 5 )
                     // .splice va a encontrar la posicion que tenga el valor buscado (5), elimina una posicion y agregas lo que quieres cambiar 
-                    array.splice(i,1,'cinco')
-                    
+                    // si no agregamos el tercer elemento al splice solamente va a eliminar 
+                    array.splice(i,1,'cinco')    
                 }
                 console.log(array);
             }
