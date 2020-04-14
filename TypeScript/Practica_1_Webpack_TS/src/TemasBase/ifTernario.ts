@@ -22,14 +22,17 @@ let NumeroObtenido =
   numero == 5 ? "Cinco" :
    numero == 7 ? "siete" : numero == 11 ? "once" : null;
 
-if (numero == 5){
-    NumeroObtenido = 'cinco'
-}else if(numero == 7){
-    NumeroObtenido = 'siete'
-}else if (numero == 11){
-    NumeroObtenido = 'once'
-}else {
-    NumeroObtenido = 'Es otro numero'
-}
+// que es lo mismo que esto 
+
+// if (numero == 5){
+//     NumeroObtenido = 'cinco'
+// }else if(numero == 7){
+//     NumeroObtenido = 'siete'
+// }else if (numero == 11){
+//     NumeroObtenido = 'once'
+// }else {
+//     NumeroObtenido = 'Es otro numero'
+// }
+
 
 console.log(NumeroObtenido);
