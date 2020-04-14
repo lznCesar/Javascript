@@ -16,8 +16,14 @@ module.exports = {
             {
                 test: /\.ts$/,
                 loader: 'awesome-typescript-loader',
+                // loader le dice a ts solamente vamos a utilizar la libreria awl 
                 exclude: /node_modules/,
             }, 
+            {
+                test: /\.css$/,
+                use:['style-loader','css-loader']
+                // use es para utilizar dos una libreria
+            },
         ],
     },
     plugins:[

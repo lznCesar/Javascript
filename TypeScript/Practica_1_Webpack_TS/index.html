@@ -7,8 +7,28 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Hello world</h1>
-    <div id="container"></div>
-    
+    <h1 class="text-center">Hello world</h1>
+    <div class="container">
+      <div class="jumbotron">
+        <div class="form-group" id="PrimerEjemplo">
+          <label for="">Ingresa tu edad:</label>
+          <input type="number" name="" id="EdadUsuario" class="form-control" />
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <button
+              type="button"
+              id="BtnEjecutar"
+              class="btn btn-primary btn-block"
+            >
+              EJECUTAR
+            </button>
+          </div>
+          <div class="col-12">
+            <div class="alert alert-success mt-3" id="Output"></div>
+          </div> 
+        </div>
+      </div>
+    </div>
   </body>
 </html>
