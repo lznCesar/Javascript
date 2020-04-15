@@ -19,10 +19,9 @@
 
 let numero = 10;
 let NumeroObtenido =
-  numero == 5 ? "Cinco" :
-   numero == 7 ? "siete" : numero == 11 ? "once" : null;
+  numero == 5 ? "Cinco" : numero == 7 ? "siete" : numero == 11 ? "once" : null;
 
-// que es lo mismo que esto 
+// que es lo mismo que esto
 
 // if (numero == 5){
 //     NumeroObtenido = 'cinco'
@@ -34,5 +33,19 @@ let NumeroObtenido =
 //     NumeroObtenido = 'Es otro numero'
 // }
 
-
 console.log(NumeroObtenido);
+
+/*
+==  ===
+el tercer igual si el valor es el mismo y si el tipo de dato  es igual 
+!= !==
+>= >===
+<= <==
+*/
+
+let x: any = 7;
+let y: any = 7;
+
+x === y
+  ? alert(`los valores sin operadores restrictivos son iguales`)
+  : alert(`los valores con operador restrictivo no son iguales`);
