@@ -3,5 +3,8 @@ import './../node_modules/bootstrap/dist/css/bootstrap.min.css'
 //import './TemasBase/TipadoDatos'
 //import './TemasBase/ifTernario'
 //import './TemasBase/Flechas'
-import './TemasBase/destructuracionArrayObjetos'
+//import './TemasBase/destructuracionArrayObjetos'
+//import './TemasBase/spreatOperator'
+
+import './BasesProgramacionAsincrona/Callback'
 

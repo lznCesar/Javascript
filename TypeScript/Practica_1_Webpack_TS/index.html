@@ -11,21 +11,31 @@
     <div class="container">
       <div class="jumbotron">
         <div class="form-group" id="PrimerEjemplo">
-          <label for="">Ingresa tu edad:</label>
-          <input type="number" name="" id="EdadUsuario" class="form-control" />
+          <label for="">Ingresa el nombre del usuario a Eliminar:</label>
+          <input type="number" name="" id="NombreUsuario" class="form-control" />
         </div>
         <div class="row">
           <div class="col-12">
             <button
               type="button"
               id="BtnEjecutar"
-              class="btn btn-primary btn-block"
+              class="btn btn-danger btn-block"
             >
-              EJECUTAR
+              ELIMINAR
             </button>
           </div>
           <div class="col-12">
-            <div class="alert alert-success mt-3" id="Output"></div>
+            <table class="table">
+              <thead class="text-center">
+                <tr>
+                  <th>#</th>
+                  <th>Nombre</th>
+                  <th>Edad</th>
+                  <th>Sexo</th>
+                </tr>
+              </thead>
+              <tbody class="text-center" id="tbody"></tbody class="text-center">
+            </table>
           </div> 
         </div>
       </div>

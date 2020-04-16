@@ -1,3 +1,4 @@
+import {Persona} from './Interfaces'
 /*******************Caracteristicas de los parametros de las funciones*******************
 Explicaremos las caracteristicas que tienen los parametros de las funciones
 
@@ -46,22 +47,25 @@ Metodos Array funcion de flecha
 *************************************/
 
 let ArregloNumerico: Array<number> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let personas: Array<any> = [
+let personas: Array<Persona> = [
   {
-    id: 1,
     nombre: "Jose Carlos",
+    apellido: 'Gonzalez',
+    edad: 23,
     sexo: "Masculino",
   },
   {
-    id: 2,
     nombre: "Chinese",
+    apellido: 'Zepeda',
+    edad: 23,
     sexo: "Masculino",
   },
   {
-    id: 3,
     nombre: "La Daniela",
+    apellido: 'Estrada',
+    edad:26,
     sexo: "Femenino",
-  },
+  }
 ];
 let ArregloNuevo: any = [];
 
@@ -87,7 +91,7 @@ if (elemento.id == 2){
 }
 *************************************/
 
-let persona = personas.find((elemento) => elemento.id == 2);
+//let persona = personas.find((elemento) => elemento.id == 2);
 
 /*******************Filter*******************
 *
@@ -106,5 +110,5 @@ Encuentra un valor dentro de un arreglo y nos regresa un true/false
 * false para cuando el valor no existe
 *************************************/
 
-let existe = personas.some((persona)=> persona.id == 2 && persona.nombre == 'Chinese');
-console.log(existe);
+//let existe = personas.some((persona)=> persona.id == 2 && persona.nombre == 'Chinese');
+//console.log(existe);
