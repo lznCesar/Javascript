@@ -49,18 +49,21 @@ Metodos Array funcion de flecha
 let ArregloNumerico: Array<number> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let personas: Array<Persona> = [
   {
+    id:1,
     nombre: "Jose Carlos",
     apellido: 'Gonzalez',
     edad: 23,
     sexo: "Masculino",
   },
   {
+    id:1,
     nombre: "Chinese",
     apellido: 'Zepeda',
     edad: 23,
     sexo: "Masculino",
   },
   {
+    id:1,
     nombre: "La Daniela",
     apellido: 'Estrada',
     edad:26,

@@ -23,11 +23,12 @@ objeto, nos ayuda a tener errores a la forma de elaborarlo
 */
 
 const ObjetoPersona1:Persona = {
+    id:1,
     nombre: 'Cesar Emmanuel',
     apellido: 'Lozano',
     edad: 27,
     sexo: 'Masculino',
-    estatura: 1.84
+   
 }
 
 console.log(ObjetoPersona1.nombre);
