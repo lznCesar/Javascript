@@ -21,3 +21,23 @@ export interface Persona{
 //     edad: 23,
 //     sexo: 'Masculino' 
 
+// interfaces para utilizar en la tarea de call back 
+
+export interface Alumnos{
+    id: number,
+    Nombre: string,
+    idCarrera: number
+}
+
+export interface Carreras {
+
+    idCarrera: number,
+    carrera: string,
+    idCentroEstudios: number,
+}
+
+export interface CentroEstudios {
+    id: number,
+    Nombre: string
+}
+

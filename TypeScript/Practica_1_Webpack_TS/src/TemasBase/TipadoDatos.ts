@@ -2,7 +2,7 @@
 let variable1: number = 0;
 let variable2: string = "Hola Mundo";
 let variable3: boolean = true;
-let Array1: Array < string|number> = [1,2,3,'a']
+let Array1: Array<string | number> = [1, 2, 3, "a"];
 
 // --A las funciones le podemos decir que elementos va a manajer
 // o que datos va retornar
@@ -29,5 +29,5 @@ function CalcularEdadCasarse() {
   const OutputElement: HTMLDivElement = <HTMLDivElement>(
     document.querySelector("#Output")
   );
-  OutputElement.innerHTML = `Te vas a casa a los ${resultado}`
+  OutputElement.innerHTML = `Te vas a casa a los ${resultado}`;
 }
