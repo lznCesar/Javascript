@@ -64,34 +64,56 @@ let CentroEstudios: Array<CentroEstudios> = [
   },
 ];
 
+// Esta seccion para el primer button
 const BtnDatosAlumno: HTMLElement = document.getElementById("BtnOtorgaDatos")!;
 BtnDatosAlumno.addEventListener("click", DatosAlumno);
 
+let GetAlumno = (nombre: string, callback: Function) => {
+  return new Promise((resolve, reject) => {
+    let alumno = Alumnos.find((alumno) => alumno.Nombre === nombre);
 
+    if (!alumno) {
+      reject(callback(`No se encuentra alumno ${alumno}`));
+    } else {
+      resolve(callback(null, alumno));
+    }
+  });
+};
 
-function OtorgarDatosAlumnos(Alumnos:Alumnos,callback:Function) {
-  
-    
-}
+let GetCarrera = (alumno: Alumnos, callback: Function) => {
+  let carrera = Carreras.find(
+    (carrera) => carrera.idCarrera === alumno.idCarrera
+  );
+
+  if (!carrera) {
+    callback(`Carrera no existe`);
+  } else {
+    callback(null, carrera.carrera);
+  }
+};
 
 function DatosAlumno() {
   let InputNombrealumno: HTMLInputElement = <HTMLInputElement>(
     document.getElementById("DatosAlumno")
   );
   const NombreAlumno: string = InputNombrealumno.value;
-  const NombreSolas: any = Alumnos.forEach(alumno => alumno.Nombre)
-  console.log(NombreSolas);
-  
-  let ArrayNombre:Array <string> = []
-  ArrayNombre.push(NombreSolas)
-  console.log(ArrayNombre);
-  
-  if( NombreAlumno == NombreSolas) console.log('entro')
-  else console.log('no entro');
-  ;
-  
-  
-  console.log(NombreAlumno);
+  GetAlumno(NombreAlumno, (err: null | string, alumno: Alumnos) => {
+    if (err) {
+      console.log(err);
+      return;
+    }
+    GetCarrera(alumno, (err: null | string, resp: string) => {
+      if (err) {
+        console.log(err);
+        return;
+      }
+      console.log(
+        `El alumno ${NombreAlumno} con id ${alumno.id} cursa ${resp}`
+      );
+    });
+  });
 }
 
-// Alumnos.map(alumno => console.log(alumno))
+/**************************************
+
+*************************************/

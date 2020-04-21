@@ -8,3 +8,5 @@ import './../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 //import './BasesProgramacionAsincrona/Callback'
 import './BasesProgramacionAsincrona/TareaCallBack'
+//import './BasesProgramacionAsincrona/Promaises'
+//import './BasesProgramacionAsincrona/Promaises'
