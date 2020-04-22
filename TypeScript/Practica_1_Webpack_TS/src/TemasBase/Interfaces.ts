@@ -15,6 +15,10 @@ export interface Persona{
     sexo: string,
 }
 
+export interface Salario{
+    id:number,
+    salario:number
+}
 
 // nombre: 'Cesar Emmanuel',
 //     apellido: 'Lozano Rincon',
